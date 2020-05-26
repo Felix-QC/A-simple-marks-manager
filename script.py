@@ -19,10 +19,12 @@ class Students:
 felix_ = Students("Felix") # Entrer le nom de l'élèves ici
 charles_ = Students("Charles") # Entrer le nom de l'élèves ici
 pierre_alex_ = Students("Pierre-Alexandre") # Entrer le nom de l'élèves ici
+louis_ = Students("louis")
 note_pa = pierre_alex_.Matiere(56, 67) # Les 2 nombres sont les notes reçus dans les différente matière au dessu
 note_felix = felix_.Matiere(90, 85) # Les 2 nombres sont les notes reçus dans les différente matière au dessu
 note_charles = charles_.Matiere(60, 75)  # Les 2 nombres sont les notes reçus dans les différente matière au dessu
+note_louis = louis_.Matiere(80, 60)
 
 # Print des résultat
-final_calcul = int((note_felix + note_charles + note_pa) / Students.nombre_eleve)
+final_calcul = int((note_felix + note_charles + note_pa + note_louis) / Students.nombre_eleve)
 print(f"\nLa moyenne du groupe est de : {final_calcul}%")
