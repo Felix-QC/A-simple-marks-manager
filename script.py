@@ -16,12 +16,12 @@ class Students:
         return calcul
     
 # Liste des élvèves 
-felix_ = Students("Felix")
-charles_ = Students("Charles")
-pierre_alex_ = Students("Pierre-Alexandre")
+felix_ = Students("Felix") # Entrer le nom de l'élèves ici
+charles_ = Students("Charles") # Entrer le nom de l'élèves ici
+pierre_alex_ = Students("Pierre-Alexandre") # Entrer le nom de l'élèves ici
 note_pa = pierre_alex_.Matiere(56, 67) # Les 2 nombres sont les notes reçus dans les différente matière au dessu
-note_felix = felix_.Matiere(90, 85) 
-note_charles = charles_.Matiere(60, 75)  
+note_felix = felix_.Matiere(90, 85) # Les 2 nombres sont les notes reçus dans les différente matière au dessu
+note_charles = charles_.Matiere(60, 75)  # Les 2 nombres sont les notes reçus dans les différente matière au dessu
 
 # Print des résultat
 final_calcul = int((note_felix + note_charles + note_pa) / Students.nombre_eleve)
