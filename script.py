@@ -16,15 +16,27 @@ class Students:
         return calcul
     
 # Liste des élvèves 
-felix_ = Students("Felix") # Entrer le nom de l'élèves ici
-charles_ = Students("Charles") # Entrer le nom de l'élèves ici
-pierre_alex_ = Students("Pierre-Alexandre") # Entrer le nom de l'élèves ici
+felix_ = Students("Felix") # Le nom de l'élèves ici
+charles_ = Students("Charles") 
+pierre_alex_ = Students("Pierre-Alexandre")
 louis_ = Students("louis")
-note_pa = pierre_alex_.Matiere(56, 67) # Les 2 nombres sont les notes reçus dans les différente matière au dessu
-note_felix = felix_.Matiere(90, 85) # Les 2 nombres sont les notes reçus dans les différente matière au dessu
-note_charles = charles_.Matiere(60, 75)  # Les 2 nombres sont les notes reçus dans les différente matière au dessu
+note_pa = pierre_alex_.Matiere(56, 67) # Les 2 nombres sont les notes reçus dans les différente matière si dessu
+note_felix = felix_.Matiere(90, 85) 
+note_charles = charles_.Matiere(60, 75)
 note_louis = louis_.Matiere(80, 60)
 
+# Calculation des notes
+notes_eleve = (note_felix + note_charles + note_pa + note_louis)
+
 # Print des résultat
-final_calcul = int((note_felix + note_charles + note_pa + note_louis) / Students.nombre_eleve)
+final_calcul = int(notes_eleve / Students.nombre_eleve)
 print(f"\nLa moyenne du groupe est de : {final_calcul}%")
+
+###############################
+########  Things to do ########
+###############################
+'''[A ajouter]
+Les inputs pour les notes et pour les noms;
+Automatiser la calculations des notes;
+Optimiser le script
+'''
